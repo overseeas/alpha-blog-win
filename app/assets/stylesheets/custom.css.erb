@@ -1,0 +1,52 @@
+@import 'bootstrap/scss/bootstrap';
+
+.navbar {
+    background-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#home-container {
+    margin-top: 25px;
+}
+
+.jumbotron {
+    background-image: url(<%= asset_path 'jumbo-copy.jpg' %>);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 425px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#page-content {
+    background-color: lightgrey;
+}
+
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
