@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      flash[:notie] = "Article was updated successfully"
+      flash[:notice] = "Article was updated successfully"
       redirect_to @article
     else
       render "edit"
@@ -57,7 +57,7 @@ class ArticlesController < ApplicationController
 
   def require_same_user
     if current_user != @article.user && !current_user.admin?
-      flash[:elert] = "You can only edit or delete your own article"
+      flash[:alert] = "You can only edit or delete your own article"
       redirect_to @article
     end
   end
